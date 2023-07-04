@@ -1,8 +1,6 @@
 package puppy
 
 import (
-	"go/doc"
-
 	"github.com/DJgit1/dog"
 )
 
@@ -15,5 +13,9 @@ func Barks() string {
 }
 
 func BigBark() string {
-	return dog.WhenGorwnUp(s string)
+	return dog.WhenGorwnUp(Bark())
+}
+
+func BigBarks() string {
+	return dog.WhenGorwnUp((Barks()))
 }
